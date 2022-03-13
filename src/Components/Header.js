@@ -61,12 +61,15 @@ const Header = () => {
             >
               {Object.entries(currencies).map((currency) => {
                 return (
-                  <MenuItem key = {currency[1].code} value={currency[1].code}>
+                  <MenuItem key={currency[1].code} value={currency[1].code}>
                     {currency[1].code}
                   </MenuItem>
                 );
               })}
             </Select>
+            <Typography variant="caption" style={{ "padding-left": 15 }}>
+              Currently all currency are not supported.
+            </Typography>
           </Toolbar>
         </Container>
       </AppBar>
