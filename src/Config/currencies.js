@@ -432,7 +432,7 @@ export const currencies = {
     name_plural: "Israeli new sheqels",
   },
   INR: {
-    symbol: "Rs",
+    symbol: "₹",
     name: "Indian Rupee",
     symbol_native: "টকা",
     decimal_digits: 2,

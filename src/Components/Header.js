@@ -11,6 +11,7 @@ import {
 } from "@material-ui/core";
 import React from "react";
 import { useNavigate } from "react-router-dom";
+import { currencies } from "../Config/currencies";
 import { CryptoState } from "../CryptoContext";
 
 const useStyles = makeStyles(() => ({
@@ -28,7 +29,7 @@ const Header = () => {
 
   const navigate = useNavigate();
 
-  const {currency , setCurrency } = CryptoState();
+  const { currency, setCurrency } = CryptoState();
 
   const darkTheme = createTheme({
     palette: {
@@ -55,11 +56,16 @@ const Header = () => {
                 height: 40,
                 marginLeft: 15,
               }}
-              value = {currency}
-              onChange = { (e) => setCurrency(e.target.value) }
+              value={currency}
+              onChange={(e) => setCurrency(e.target.value)}
             >
-              <MenuItem value={"USD"}>USD</MenuItem>
-              <MenuItem value={"INR"}>INR</MenuItem>
+              {Object.entries(currencies).map((currency) => {
+                return (
+                  <MenuItem key = {currency[1].code} value={currency[1].code}>
+                    {currency[1].code}
+                  </MenuItem>
+                );
+              })}
             </Select>
           </Toolbar>
         </Container>
