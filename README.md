@@ -72,3 +72,8 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 ### Site from where API are used to fetch info regarding crypto currency
 
 https://www.coingecko.com/en/api/documentation
+
+### URL of website
+
+https://crypto-screenerr.netlify.app/
+
