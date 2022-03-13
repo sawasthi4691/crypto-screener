@@ -2,6 +2,7 @@ import axios from "axios";
 import { useEffect, useState } from "react";
 import { HistoricalChart } from "../Config/api";
 import { Line } from "react-chartjs-2";
+// eslint-disable-next-line no-unused-vars
 import Chart from "chart.js/auto";
 
 import {

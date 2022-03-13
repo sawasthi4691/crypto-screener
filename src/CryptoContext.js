@@ -1,5 +1,4 @@
 import React, { createContext, useContext, useEffect, useState } from "react";
-import { currencies } from "./Config/currencies";
 
 const Crypto = createContext();
 
